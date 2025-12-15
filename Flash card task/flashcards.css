@@ -1,0 +1,120 @@
+*{
+  padding:0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 10px 5px;
+  margin: auto;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+button{
+    outline: none;
+    border: 1px solid lightgrey;
+    background-color: white;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+button:hover{
+  background-color: rgba(0, 0, 0, 0.192);
+  cursor: pointer;
+}
+.create-box{
+  width: 380px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.create-box h2{
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.create-box textarea{
+  width: 100%;
+  border: 1px solid lightgrey;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: none;
+}
+
+.create-box button{
+  width: fit-content;
+  margin: 10px auto 0 auto;
+}
+
+.flashcards{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 0 10px;
+  background-color: whitesmoke;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.flashcard{
+  width: 250px;
+  height: 150px;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+.flashcard h2{
+  color: black;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .flashcard{
+    margin: auto;
+  }
+  .flashcard{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .create-box{
+    width: 100%;
+  }
+  .flashcard{
+    width: 100%;
+    margin: 10px 0;
+  }
+}
