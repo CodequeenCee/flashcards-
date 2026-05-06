@@ -1,11 +1,11 @@
-*{
-  padding:0;
+* {
+  padding: 0;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
 }
 
-.container{
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,22 +16,26 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
-button{
-    outline: none;
-    border: 1px solid lightgrey;
-    background-color: white;
-    font-size: 1rem;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 0 10px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+button {
+  outline: none;
+  border: 1px solid lightgrey;
+  background-color: white;
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
-button:hover{
+button:hover {
   background-color: rgba(0, 0, 0, 0.192);
   cursor: pointer;
 }
-.create-box{
+
+.create-box {
   width: 380px;
   margin: auto;
   padding: 20px;
@@ -41,12 +45,13 @@ button:hover{
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
-.create-box h2{
+.create-box h2 {
   color: black;
   text-align: center;
   margin-bottom: 10px;
 }
-.create-box textarea{
+
+.create-box textarea {
   width: 100%;
   border: 1px solid lightgrey;
   margin: 5px 0;
@@ -56,12 +61,12 @@ button:hover{
   resize: none;
 }
 
-.create-box button{
+.create-box button {
   width: fit-content;
   margin: 10px auto 0 auto;
 }
 
-.flashcards{
+.flashcards {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -74,7 +79,7 @@ button:hover{
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
-.flashcard{
+.flashcard {
   width: 250px;
   height: 150px;
   background-color: white;
@@ -91,29 +96,33 @@ button:hover{
 }
 
 
-.flashcard h2{
+.flashcard h2 {
   color: black;
   font-size: 1rem;
 }
 
 @media (max-width: 768px) {
-  .flashcard{
+  .flashcard {
     margin: auto;
   }
-  .flashcard{
+
+  .flashcard {
     margin-top: 10px;
     margin-bottom: 10px;
   }
 }
+
 @media (max-width: 480px) {
   nav {
     flex-direction: column;
     align-items: center;
   }
-  .create-box{
+
+  .create-box {
     width: 100%;
   }
-  .flashcard{
+
+  .flashcard {
     width: 100%;
     margin: 10px 0;
   }
