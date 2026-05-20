@@ -17,3 +17,4 @@ A simple flashcard app that allows users to create, view, and delete flashcards.
 - HTML
 - CSS
 - JavaScript
+![Flash Card App](flashcards-app/screenshot.png)
